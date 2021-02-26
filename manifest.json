@@ -1,0 +1,12 @@
+{
+    "version": "0.2",
+    "requires" : ["pandas"],
+    "dumper" : {
+        "data_url" : ["https://s3.pgkb.org/data/annotations.zip"],
+        "uncompress" : false
+    },
+    "uploader" : {
+        "parser" : "parser:load_gnomad_genome",
+        "on_duplicates" : "error"
+    }
+}
